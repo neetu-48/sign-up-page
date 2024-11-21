@@ -176,6 +176,26 @@ input[type="password"][id="password"] {
     border: 1px solid rgba(228, 234, 247, 1);
 }
 
+img[ alt="social-icons"]
+{
+    position: absolute;
+    z-index: 99 !important;
+    left: 149px;
+}
+
+.facebook-icon
+{
+
+}
+
+.twitter
+{
+   
+    top: 267px;
+
+}
+
+
 
 @media (min-width:992px) {
     section::after {
@@ -194,16 +214,22 @@ input[type="password"][id="password"] {
     .circle {
         position: absolute !important;
         z-index: 99;
-        right: 9%;
-        bottom: 71px;
+        right: 6%;
+        bottom: -56px;
+    }
 
+    .image-2 {
+        position: absolute;
+        right: 10%;
+        bottom: 21%;
+        z-index: 99;
     }
 
     .form {
         max-width: 340px !important;
         width: 100%;
     }
-
+   
     .col-lg-6 {
         width: 50%;
         padding-left: 12px;
