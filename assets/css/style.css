@@ -7,6 +7,7 @@
     line-height: 43.2px;
     text-align: left;
     color: rgba(3, 7, 18, 1);
+    padding-top: 48px !important;
 }
 
 a {
@@ -20,6 +21,7 @@ a {
     line-height: 21px;
     text-align: left;
     color: rgba(98, 101, 109, 1);
+    padding-bottom: 20px !important;
 
 }
 
@@ -49,35 +51,39 @@ label[for="password"] {
 .icon {
     position: absolute;
     top: 50%;
-    left: 5px;
+    left: 15px;
     transform: translateY(-50%);
 }
 
 .icon-1 {
     position: absolute;
     top: 50%;
-    left: 5px;
+    left: 15px;
     transform: translateY(-50%);
 }
 
 .icon-2 {
     position: absolute;
     top: 50%;
-    right: 5px;
+    right: 15px;
     transform: translateY(-50%);
     cursor: pointer;
 }
 
-/*.close-eye-icon:hover path {
+.icon-2:hover path {
     fill: black;
-}*/
+}
+
 input[type="email"][id="email"] {
-    padding: 8px 30px;
+    padding: 8px 43px;
     font-family: "Lato", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     width: 100% !important;
+    border: 1px solid rgba(228, 234, 247, 1) !important;
+    background: rgba(245, 248, 255, 1);
+    border-radius: 6px !important;
 }
 
 ::placeholder {
@@ -85,12 +91,39 @@ input[type="email"][id="email"] {
 }
 
 input[type="password"][id="password"] {
-    padding: 8px 30px;
+    padding: 8px 43px;
     font-family: "Lato", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     width: 100% !important;
+    border: 1px solid rgba(228, 234, 247, 1) !important;
+    background: rgba(245, 248, 255, 1);
+    border-radius: 6px !important;
+}
+
+.forgot {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: right;
+    color: rgba(98, 101, 109, 1);
+
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+label[for="remeber"] {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: rgba(98, 101, 109, 1);
+
 }
 
 .sign-btn {
@@ -104,6 +137,7 @@ input[type="password"][id="password"] {
     width: 340px;
     height: 48px;
     cursor: pointer;
+    margin-bottom: 16px !important;
     padding: 14px 32px 14px 32px;
     border-radius: 50px;
     border: 2px solid #2194FF;
@@ -119,6 +153,7 @@ input[type="password"][id="password"] {
     margin: auto;
     color: rgba(145, 151, 166, 1);
     position: relative;
+    margin-bottom: 20px !important;
 }
 
 .continue:before {
@@ -130,6 +165,12 @@ input[type="password"][id="password"] {
     top: 50%;
     left: 0;
     background-color: rgba(201, 207, 219, 1);
+    margin-bottom: 20px !important;
+}
+
+.form-check {
+    padding-top: 12px !important;
+    padding-bottom: 24px;
 }
 
 .continue:after {
@@ -141,6 +182,7 @@ input[type="password"][id="password"] {
     top: 50%;
     right: 0;
     background-color: rgba(201, 207, 219, 1);
+    margin-bottom: 20px !important;
 }
 
 .google-icon {
@@ -150,7 +192,15 @@ input[type="password"][id="password"] {
     line-height: 21px;
     text-align: center;
     color: rgba(98, 101, 109, 1);
+}
 
+.facebook-social {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: rgba(98, 101, 109, 1);
 }
 
 .bg-image {
@@ -176,26 +226,29 @@ input[type="password"][id="password"] {
     border: 1px solid rgba(228, 234, 247, 1);
 }
 
-img[ alt="social-icons"]
-{
+img[ alt="social-icons"] {
     position: absolute;
     z-index: 99 !important;
     left: 149px;
 }
 
-.facebook-icon
-{
+.facebook-icon {
+    top: 100px;
+}
+
+.twitter-icon {
+
+    top: 410px;
 
 }
 
-.twitter
-{
-   
-    top: 267px;
-
+.linkedin-icon {
+    top: 201px;
 }
 
-
+.instagram-icon {
+    top: 313px;
+}
 
 @media (min-width:992px) {
     section::after {
@@ -221,7 +274,7 @@ img[ alt="social-icons"]
     .image-2 {
         position: absolute;
         right: 10%;
-        bottom: 21%;
+        bottom: 13%;
         z-index: 99;
     }
 
@@ -229,10 +282,20 @@ img[ alt="social-icons"]
         max-width: 340px !important;
         width: 100%;
     }
-   
+
     .col-lg-6 {
         width: 50%;
         padding-left: 12px;
         padding-right: 12px;
+    }
+
+
+}
+
+@media (min-width:567px) {
+    img[ alt="social-icons"] {
+        flex-direction: column;
+        display: flex;
+        gap: 3px;
     }
 }
