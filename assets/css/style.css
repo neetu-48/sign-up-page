@@ -203,8 +203,8 @@ label[for="remeber"] {
     color: rgba(98, 101, 109, 1);
 }
 
-.bg-image {
-    background-image: url(../image/png/Sign\ in.png);
+.social-image {
+    background-image: url(../image/png/Sign\ in\ \(1\).png) !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
